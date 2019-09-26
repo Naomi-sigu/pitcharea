@@ -6,7 +6,6 @@ By Naomi-Sigu
 ## Overall Project Description
 This is a Python-Flask application that allows users to use that one minute to be able to market themselves. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.
 
-
 ## User stories
 
 * A user can see the pitches other people have posted.
