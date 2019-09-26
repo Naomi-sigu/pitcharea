@@ -1,0 +1,35 @@
+.text-white {
+    font-weight: bold;
+    color: white;
+}
+.container{
+    text:white;
+    border-radius:10px;
+    margin-bottom:40px;
+    margin-left: 50px;
+
+  } 
+  h1{
+    text-align:center;
+  }
+  
+  .container h1{
+    text-align:center;
+  }
+  body{
+    background-color:#F2F3F4;
+  }
+  .blinking{
+    animation:blinkingText 2.0s infinite;
+  }
+  @keyframes blinkingText{
+    0%{ color:#000;}
+    0% {color: transparent}
+    0% {color: transparent}
+
+  }
+  body{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

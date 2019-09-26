@@ -1,0 +1,12 @@
+{% extends 'bootstrap/base.html' %}
+<body class="body" style="background-image:url('https://image.freepik.com/free-photo/white-marble-texture-background_38679-514.jpg')">
+
+{% block navbar %}
+  {% include 'navbar.html' %}
+{% endblock %}
+
+{% block styles %}
+  {{super()}}]
+  {{simplemde.css}}
+  {{simplemde.js}}
+{% endblock %}

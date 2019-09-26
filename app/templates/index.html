@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+{% block styles %}
+
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+      
+{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/app/particles.js">particlesJS("particles-js",<strong>particlesjs-config.json</strong>);</script>
+    <title>Pitch</title>
+</head>
+<body class="body" style="background-image:url('https://image.freepik.com/free-photo/abstract-rustic-black-surface_23-2148287666.jpg')">
+    <div id="particles-js">
+        <h1 class="text-white text-center">Pitch Area</h1>
+        <hr>
+        <h2 class="text-white">{{ message }}</h2>
+        {{macro.displayPitches(pitches)}}
+    </div>
+
+    <script type="text/javascript">
+        particlesJS("particles-js",<strong>particlesjs-config.json</strong>);
+    </script>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% macro displayPitches(pitches_list) %}
+  {% for pitch in pitches_list %}
+  <div class="container">
+    <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
+      <h1>{{pitch.title}}</h1>
+      <h4>{{pitch.body}}</h4>
+      
+      <h4><a href='/comment'>Write a comment</a></h4>
+      <a href="/view-comments/{{pitch.id}}" class="btn btn-primary text-center">Read comments</a>
+      
+      <p>Posted: {{ pitch.posted }}</p>
+      <br>
+      <br>
+    </div>
+  </div>
+  {% endfor %}
+{% endmacro %}
+
+{% macro displayComments(comments_list) %}
+{% for comment in comments_list %}
+<div class="container">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <ul>
+      <li><h4>{{comment.comment}}</h4></li>
+    </ul>
+    <h6>Posted: {{comment.posted}}</h6>
+  </div>
+</div>
+{% endfor %}
+{% endmacro %}
